@@ -47,8 +47,8 @@ confirmed cost affects their doctor visit decisions.
 - Aarogya-AI-NaiveBayes-Model.rmp — trained model
 - dataset.csv — Disease Symptom Prediction dataset
 - 99.3%.png — model performance screenshot
-- mendix app ss 1.png — symptom checker screen
-- mendix app ss 2.png — triage result screen
+- Aarogya AI page 1.png — symptom checker screen
+- Aarogya AI page 2.png — triage result screen
 
 ## Competition
 Data Science Contest — Xpecto'26
