@@ -55,28 +55,3 @@ Data Science Contest — Xpecto'26
 IIT Mandi — Supported by Siemens
 Deadline: April 4, 2026
 ```
-
-5. Scroll down → Commit message: `Update README with full project documentation`
-6. Click **Commit changes**
-
----
-
-## Step 7 — Verify Everything Looks Right
-
-Once all files are uploaded, your repo should look like this:
-```
-aarogya-ai/
-├── README.md
-├── model/
-│   └── Aarogya-AI-NaiveBayes-Model.rmzp
-├── data/
-│   └── dataset_description.md
-├── app/
-│   └── screenshots/
-│       ├── symptom_checker.png
-│       ├── triage_result.png
-│       └── asha_dashboard.png
-├── report/
-│   └── Aarogya_AI_Summary_Report_v2.pdf
-└── pitch/
-    └── Aarogya_AI_Pitch_Final.pptx
