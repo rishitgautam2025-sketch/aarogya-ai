@@ -31,9 +31,3 @@ India's first two-sided health intelligence platform - AI-powered symptom triage
 - Author: Ebrahim Elgazar (Kaggle)
 - Purpose: Maps predicted diseases to correct doctor specialization
 ```
-
----
-
-## GitHub About Description
-```
-India's first two-sided health intelligence platform - AI-powered symptom triage and community outbreak detection. Built with RapidMiner and Mendix. Xpecto'26, IIT Mandi.
