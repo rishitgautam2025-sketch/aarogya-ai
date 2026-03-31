@@ -4,15 +4,15 @@ built for low-income communities.
 
 ## Problem
 500M Indians lack affordable healthcare access.
-₹300-800 consultation fee is a barrier for daily
+Rs 300-800 consultation fee is a barrier for daily
 wage earners. 58% of surveyed users confirm cost
 affects their doctor visit decisions.
 
 ## Solution
-- Symptom triage — AI predicts disease from symptoms
-- Doctor discovery — nearest specialists by distance,
+- Symptom triage: AI predicts disease from symptoms
+- Doctor discovery: nearest specialists by distance,
   price, rating
-- Community health — outbreak alerts for ASHA workers
+- Community health: outbreak alerts for ASHA workers
 
 ## How It Works
 Patient enters symptoms in Mendix app. Symptoms are
@@ -25,23 +25,23 @@ real time. Phase 2 implements live REST API endpoint.
 - Algorithm: Naive Bayes (best of 205 models)
 - Accuracy: 99.3%
 - Error Rate: 0.7%
-- Stability: ±0.4% standard deviation
+- Stability: +/- 0.4% standard deviation
 - Training: 4,920 examples, 41 diseases, 132 symptoms
 
 ## Tech Stack
-- Altair RapidMiner AI Studio — predictive modeling
-- Mendix Studio Pro — application development
+- Altair RapidMiner AI Studio: predictive modeling
+- Mendix Studio Pro: application development
 
 ## Datasets
-- Disease Symptom Prediction — Pranay Patil (Kaggle)
-- Doctor Specialty Recommendation — Ebrahim Elgazar
+- Disease Symptom Prediction by Pranay Patil (Kaggle)
+- Doctor Specialty Recommendation by Ebrahim Elgazar
 
 ## Repository Structure
-- model/ — RapidMiner exported model (.rmp)
-- data/ — dataset description
-- app/ — Mendix screenshots
-- report/ — summary report PDF
-- pitch/ — presentation deck
+- model/ : RapidMiner exported model (.rmp)
+- data/ : dataset description
+- app/ : Mendix screenshots
+- report/ : summary report PDF
+- pitch/ : presentation deck
 
 ## Primary Research
 19 respondents, Nagpur, March 2026
@@ -50,6 +50,6 @@ real time. Phase 2 implements live REST API endpoint.
 - 74% would trust AI to recommend a nearby doctor
 
 ## Competition
-Data Science Contest — Xpecto'26
-IIT Mandi — Supported by Siemens
+Data Science Contest, Xpecto'26
+IIT Mandi, Supported by Siemens
 Deadline: April 4, 2026
