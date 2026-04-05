@@ -10,7 +10,7 @@
 - Event: Data Science Contest - Xpecto'26
 - Organizer: IIT Mandi, Supported by Siemens
 - Mode: Online, Solo Participation
-- Deadline: April 4, 2026
+- Deadline: April 30, 2026
 
 ---
 
@@ -70,6 +70,15 @@ Aarogya AI serves two users simultaneously:
 |---|---|
 | Altair RapidMiner AI Studio | Data preprocessing, feature engineering, predictive modeling |
 | Mendix Studio Pro | Patient app, ASHA dashboard, health map |
+
+---
+
+## App Features
+- 60 disease-symptom mappings including mental health conditions
+- Color coded risk levels (Red/Yellow/Green)
+- 3 nearest specialists with distance and consultation fee
+- Medical disclaimer on all results
+- REST API endpoint for live predictions
 
 ---
 
