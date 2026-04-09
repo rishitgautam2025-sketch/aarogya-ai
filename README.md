@@ -1,5 +1,6 @@
 # Aarogya AI
-### India's first two-sided health intelligence platform - built for the last mile
+### India's first two-sided health intelligence 
+platform - built for the last mile
 
 ## Demo Video
 [Watch Full Project Demo](https://youtu.be/ZwHhtVM8x0w)
@@ -15,12 +16,12 @@
 ---
 
 ## Problem
-500 million Indians lack access to affordable healthcare.
-The average doctor consultation fee of Rs 300-800 acts as
-a barrier for daily wage earners. 58% of our survey
-respondents confirmed cost directly affects their doctor
-visit decisions. Minor illnesses become emergencies because
-people delay diagnosis.
+500 million Indians lack access to affordable 
+healthcare. The average doctor consultation fee of 
+Rs 300-800 acts as a barrier for daily wage earners. 
+58% of our survey respondents confirmed cost directly 
+affects their doctor visit decisions. Minor illnesses 
+become emergencies because people delay diagnosis.
 
 ---
 
@@ -28,17 +29,32 @@ people delay diagnosis.
 Aarogya AI serves two users simultaneously:
 
 **For Patients:**
-- Enter up to 5 symptoms in plain language
+- Select symptoms via structured interface
 - AI predicts disease with 99.3% accuracy
-- Risk level: Red (see doctor today) / Yellow (monitor 3
-  days) / Green (home care)
-- Nearest specialists shown sorted by distance, price,
-  and rating
+- Dynamic risk triage: Red (see doctor today) / 
+  Yellow (monitor 3 days) / Green (home care)
+- Nearest specialists shown with distance, 
+  consultation fee, and rating
+- Medical disclaimer on all results
 
 **For Health Workers:**
 - ASHA worker dashboard shows community symptom trends
 - Anonymous aggregation detects disease outbreaks early
 - Village-level alerts before outbreaks spread
+
+---
+
+## App Features
+- 60 disease-symptom mappings including mental 
+  health conditions
+- Color coded risk levels (Red/Yellow/Green)
+- Emergency escalation - critical symptoms like 
+  chest pain immediately flag HIGH risk
+- 3 nearest specialists with distance and 
+  consultation fee
+- REST API endpoint for live predictions
+- Geoapify Places API integrated for real-time 
+  doctor discovery (Phase 2 - live GPS location)
 
 ---
 
@@ -54,14 +70,10 @@ Aarogya AI serves two users simultaneously:
 | Symptoms Mapped | 132 |
 | Validation | Multiple hold-out cross-validation |
 
-### Confusion Matrix Highlights
-| Disease | Correct | Accuracy |
-|---|---|---|
-| Allergy | 38/38 | 100% |
-| GERD | 30/30 | 100% |
-| Diabetes | 36/36 | 100% |
-| Dengue | 35/35 | 100% |
-| Fungal Infection | 32/34 | 94% |
+Note: 99.3% accuracy reflects performance on a 
+clean structured Kaggle dataset. Real-world 
+performance with noisy input will be validated 
+in Phase 2 field testing.
 
 ---
 
@@ -70,15 +82,7 @@ Aarogya AI serves two users simultaneously:
 |---|---|
 | Altair RapidMiner AI Studio | Data preprocessing, feature engineering, predictive modeling |
 | Mendix Studio Pro | Patient app, ASHA dashboard, health map |
-
----
-
-## App Features
-- 60 disease-symptom mappings including mental health conditions
-- Color coded risk levels (Red/Yellow/Green)
-- 3 nearest specialists with distance and consultation fee
-- Medical disclaimer on all results
-- REST API endpoint for live predictions
+| Geoapify Places API | Real-time doctor and clinic discovery |
 
 ---
 
@@ -91,20 +95,21 @@ Aarogya AI serves two users simultaneously:
 ---
 
 ## How It Works
-1. Patient enters symptoms in Mendix app
-2. Symptoms matched against RapidMiner Naive Bayes model
-   outputs stored in prediction table
-3. Predicted disease, risk level, and specialist
+1. Patient selects symptoms in Mendix app
+2. Symptoms matched against RapidMiner Naive Bayes 
+   model outputs stored in prediction table
+3. Predicted disease, risk level, and specialist 
    recommendation returned in real time
-4. If doctor needed, nearest specialists shown with
-   distance, fee, and rating
-5. Anonymous symptom data aggregated for ASHA worker
-   outbreak alerts
+4. Nearest specialists shown with distance, fee, 
+   and rating
+5. Anonymous symptom data aggregated for ASHA 
+   worker outbreak alerts
 
-Integration note: Current prototype uses RapidMiner-derived
-prediction table within Mendix for real-time matching.
-Phase 2 implements live REST API endpoint between Mendix
-and deployed RapidMiner model.
+Integration note: Current prototype uses 
+RapidMiner-derived prediction table within Mendix 
+for real-time matching. Phase 2 implements live 
+REST API endpoint between Mendix and deployed 
+RapidMiner model.
 
 ---
 
@@ -118,58 +123,39 @@ homemakers, and business owners
 | Cost affects doctor visit decisions | 58% |
 | Have Googled symptoms before visiting doctor | 79% |
 | Would trust AI to recommend nearby doctor | 74% |
-| Rated AI triage as highly useful (4 or 5 out of 5) | 47% |
-
-Top factors when choosing a doctor: Rating, Specialization,
-Proximity
+| Rated AI triage as highly useful | 47% |
 
 ---
 
 ## Repository Structure
-```
 aarogya-ai/
-├── README.md
-├── model/
-│   └── Aarogya-AI-NaiveBayes-Model.rmp
-├── data/
-│   └── dataset_description.md
-├── app/
-│   └── screenshots/
-├── report/
-│   └── Aarogya_AI_Summary_Report_v2.pdf
-└── pitch/
-    └── Aarogya_AI_Final_v3.pptx
-```
-
----
-
-## Files
-- `model/` - Exported RapidMiner Naive Bayes model (.rmp)
-- `data/` - Dataset description and source details
-- `app/` - Mendix application screenshots
-- `report/` - Project summary report (PDF)
-- `pitch/` - Presentation deck (11 slides)
+- README.md
+- model/ - Exported RapidMiner Naive Bayes model
+- data/ - Dataset description and source details
+- app/ - Mendix application screenshots
+- report/ - Project summary report (PDF)
+- pitch/ - Presentation deck
 
 ---
 
 ## Impact
-- Reduce unnecessary doctor visits by 40% for non-serious
+- Reduce unnecessary doctor visits for non-serious 
   conditions
-- Early outbreak detection for 500+ villages through
+- Early outbreak detection for 500+ villages through 
   anonymous symptom aggregation
-- Save low-income families Rs 2,000-5,000 annually in
-  unnecessary consultation fees
+- Save low-income families Rs 2,000-5,000 annually
 - Scale from village to district to state level
 
 ---
 
 ## Roadmap
-**Phase 1 - Live:** Symptom triage, doctor discovery
-**Phase 2 - Next 3 months:** Pre-visit intelligence (symptoms
-sent to doctor before appointment), live REST API integration,
-follow-up checker
-**Phase 3 - 6-12 months:** Voice input in Hindi and Marathi,
-health timeline, medicine reminders, offline mode for 2G
+Phase 1 - Live: Symptom triage, doctor discovery, 
+color coded risk levels
+Phase 2 - Next 3 months: Live GPS location, live 
+RapidMiner API endpoint, pre-visit intelligence
+Phase 3 - 6-12 months: Voice input in Hindi, 
+Marathi, and Pahari, health timeline, offline 
+mode for 2G areas
 
 ---
 
