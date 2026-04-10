@@ -3,7 +3,7 @@
 platform - built for the last mile
 
 ## Demo Video
-[Watch Full Project Demo](https://youtu.be/ESMvGouaWa8)
+[Watch Full Project Demo]([https://youtu.be/ESMvGouaWa8](https://youtu.be/kDIxwSr0mrg))
 
 ---
 
